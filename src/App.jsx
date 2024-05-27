@@ -1,10 +1,12 @@
-import './App.css'
+import './App.css';
+import Nav from './components/Nav';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
   return (
     <>
-      <h1>hello</h1>
+      React Router Dom
     </>
   )
 }
