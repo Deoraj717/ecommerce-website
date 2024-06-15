@@ -9,7 +9,7 @@ import {NavLink,Outlet} from "react-router-dom";
 
 export default function Nav(){
 
-    const [isVis,setIsVis] = react.useState();
+    const [isVis,setIsVis] = React.useState();
 
     const toggleSidebar = ()=>{
         setIsVis(!isVis);
@@ -18,7 +18,8 @@ export default function Nav(){
     return(
         <div className="nav-bar">
             <div className="sidebar-logo">
-                <Sidebar isOpen = {isVis} toggleSidebar={{toggleSidebar}}/>
+                <button className="open-sidebar" onClick={toggleSidebar}>=Open Sidebar</button>
+                <Sidebar isOpen = {isVis} toggleSidebar={toggleSidebar}/>
             </div>
             <div className="brand-logo">
                 <img src={brand} alt="Sunny ecommerce website"/>

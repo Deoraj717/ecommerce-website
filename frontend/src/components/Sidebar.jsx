@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 function Sidebar({isOpen,toggleSidebar}) {
   return (
-    <div className={`sidebar-${isOpen?'open':''}`}>
+    <div className={`sidebar${isOpen?'-open':''}`}>
         <button className='close-btn' onClick={toggleSidebar}>x</button>
         <ul>
             <li><NavLink to="dashboard">Home</NavLink></li>

@@ -1,3 +1,5 @@
+import Reviews from "./Reviews";
+
 export default function Dashboard(){
 
     return(
@@ -20,7 +22,7 @@ export default function Dashboard(){
                 </div>
                 <div className="lower-dashboard">
                     <div className="reviews-dashboard">
-
+                        <Reviews/>
                     </div>
                     <div className="top-products-dashboard">
 
