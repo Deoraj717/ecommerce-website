@@ -6,10 +6,12 @@
 
 import { useEffect } from "react";
 import axios from "axios";
+import React from "react";
+import Review from "./Review";
 
 export default function Reviews(){
 
-    const [reviews,setReviews] = React.useState({});
+    const [reviews,setReviews] = React.useState([]);
     const [loading,setLoading] = React.useState(true);
     const [err,setErr] = React.useState(false);
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from './Product'
+import { Outlet } from 'react-router-dom'
 
 function Products() {
 
@@ -8,6 +9,7 @@ function Products() {
   return (
     <div className="products">
         <Product products={products_data}/>
+        <Outlet/>
     </div>
   )
 }
