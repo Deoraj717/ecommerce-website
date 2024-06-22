@@ -8,7 +8,9 @@ import SellDetail from './components/SellDetail'
 import Review from './components/Review'
 import bell from '/images/bell.png';
 import Orders from './components/Orders'
-
+import Login from './components/Login'
+import image1 from '/images/back.jpg';
+import Search from './components/Search'
 function Layout() {
 
   const rev={
@@ -44,7 +46,12 @@ function Layout() {
   return (
     <>
         <Nav/>
-        <Outlet/>
+        <div className="temp">
+      
+          <Search/>
+
+        </div>
+        
         <Footer/>
     </>
   )
